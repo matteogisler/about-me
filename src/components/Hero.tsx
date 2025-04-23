@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-2xl md:text-3xl text-gray-300 mb-8"
           >
-            Blockchain Developer
+            Software Engineer
           </motion.h2>
           
           <motion.p
@@ -42,9 +42,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-gray-400 text-xl mb-12 leading-relaxed"
           >
-            Building the future of Web3 through innovative blockchain solutions.
-            Specializing in decentralized applications with a passion for creating
-            secure and user-friendly experiences.
+            Trained Software Engineer with a passion for Web3 and decentralized technology. One of the few blockchain apprentices in Switzerland, blending traditional development skills with hands-on experience in emerging ecosystems.
           </motion.p>
           
           <motion.div
