@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills and interests in blockchain technology and application development.
+              Here are some of my recent projects that showcase my skills in application development.
             </p>
           </motion.div>
 
