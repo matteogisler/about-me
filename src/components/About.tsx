@@ -29,11 +29,11 @@ const About: React.FC = () => {
   };
 
   const skillsData = [
-    { name: 'Solidity', level: 85 },
     { name: 'React / Web Dev', level: 90 },
-    { name: 'Smart Contracts', level: 80 },
-    { name: 'DeFi Protocols', level: 75 },
-    { name: 'NFT Development', level: 82 },
+    { name: 'Python', level: 70 },
+    { name: 'SQL', level: 75 },
+    { name: 'Java', level: 60 },
+    { name: 'Solidity (Learning)', level: 20 },
   ];
 
   return (
@@ -59,15 +59,14 @@ const About: React.FC = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold mb-6 text-indigo-400">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                As a junior blockchain developer, I've recently completed my developer apprenticeship 
+                As a junior developer, I've recently completed my developer apprenticeship with a focus on blockchain
                 where I discovered my passion for Web3 technologies. My journey began with traditional 
                 web development, but I quickly became fascinated by blockchain's potential to revolutionize 
                 how we build digital systems.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I've participated in multiple hackathons, including a recent one where our Web3 iOS wallet 
-                secured 2nd place. I'm constantly expanding my knowledge of smart contracts, decentralized 
-                applications, and the evolving blockchain ecosystem.
+                I've recently participated in a hackathon, where our Flutter App with AI integration 
+                secured 2nd place. 
               </p>
             </motion.div>
 
@@ -112,12 +111,11 @@ const About: React.FC = () => {
             variants={containerVariants} 
             initial="hidden" 
             animate={inView ? "visible" : "hidden"}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16"
           >
             {[
-              { icon: Code, title: "Blockchain Dev", text: "Building decentralized applications with Solidity and Web3.js" },
-              { icon: Trophy, title: "Hackathon Winner", text: "2nd place for Web3 iOS wallet hackathon project" },
-              { icon: Rocket, title: "Fast Learner", text: "Quickly adapting to new blockchain technologies and frameworks" },
+              { icon: Trophy, title: "Hackathon Winner", text: "2nd place for Flutter App with AI integration" },
+              { icon: Rocket, title: "Fast Learner", text: "Quickly adapting to new technologies and frameworks" },
               { icon: BookOpen, title: "Continuous Growth", text: "Always expanding knowledge through research and practice" }
             ].map((item, index) => {
               const Icon = item.icon;
