@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FileDown, Briefcase, GraduationCap } from 'lucide-react';
+import resume_matteo_gisler from '../assets/Resume_Matteo_Gisler.pdf';
 
 const Resume: React.FC = () => {
   const [ref, inView] = useInView({
@@ -31,23 +32,23 @@ const Resume: React.FC = () => {
   const timelineItems = [
     {
       icon: Briefcase,
-      period: "2023 - Present",
+      period: "Apr. 2025",
       title: "Junior Blockchain Developer",
       company: "Web3 Solutions",
       description: "Developing smart contracts and decentralized applications. Working on blockchain integration with frontend applications."
     },
     {
       icon: GraduationCap,
-      period: "2020 - 2023",
-      title: "Developer Apprenticeship",
-      company: "Tech Innovations Inc.",
+      period: "Oct. 2023 - Nov. 2023",
+      title: "New York - Work Experience Abroad",
+      company: "Greater Zurich Area",
       description: "Completed a comprehensive developer apprenticeship program with a focus on web development and emerging technologies."
     },
     {
       icon: Briefcase,
-      period: "2022",
-      title: "Hackathon Participant",
-      company: "BlockchainWeek",
+      period: "2021 - Present",
+      title: "Developer in Training",
+      company: "TIE International AG",
       description: "Developed a Web3 iOS wallet that secured 2nd place in the competition. Implemented secure key management and intuitive user interface."
     }
   ];
@@ -70,13 +71,13 @@ const Resume: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              My professional journey and learning experiences in the world of blockchain development.
+              My professional journey and learning experiences in the world of development.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-16">
             <a 
-              href="/MatteGisler-Resume.pdf" 
+              href={resume_matteo_gisler}
               className="flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-all duration-300 mx-auto w-fit"
               download
             >
