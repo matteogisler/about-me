@@ -159,6 +159,33 @@ const About: React.FC = () => {
             </motion.div>
           </div>
 
+          {/* FULL-WIDTH Detailed Skills grid */}
+        {showDetails && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            {skillCategories.map((cat) => (
+              <div key={cat.category} className="bg-gray-900/50 p-6 rounded-lg">
+                <h4 className="text-lg font-semibold mb-4 text-indigo-400">{cat.category}</h4>
+                <div className="flex flex-wrap gap-2">
+                  {cat.items.map((it) => (
+                    <span
+                      key={it.label}
+                      className="inline-flex items-center space-x-1 px-3 py-1 bg-gray-800 rounded-full text-sm hover:bg-gray-700 transition"
+                    >
+                      <span>{it.icon}</span>
+                      <span>{it.label}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        )}
+
           {/* Bottom Cards */}
           <motion.div
             variants={containerVariants}
@@ -200,33 +227,6 @@ const About: React.FC = () => {
             })}
           </motion.div>
         </motion.div>
-
-        {/* FULL-WIDTH Detailed Skills grid */}
-        {showDetails && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {skillCategories.map((cat) => (
-              <div key={cat.category} className="bg-gray-900/50 p-6 rounded-lg">
-                <h4 className="text-lg font-semibold mb-4 text-indigo-400">{cat.category}</h4>
-                <div className="flex flex-wrap gap-2">
-                  {cat.items.map((it) => (
-                    <span
-                      key={it.label}
-                      className="inline-flex items-center space-x-1 px-3 py-1 bg-gray-800 rounded-full text-sm hover:bg-gray-700 transition"
-                    >
-                      <span>{it.icon}</span>
-                      <span>{it.label}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </motion.div>
-        )}
       </div>
     </section>
   );

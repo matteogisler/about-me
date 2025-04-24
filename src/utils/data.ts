@@ -1,6 +1,6 @@
 import { Project } from './types';
 import nutro from '../assets/Nutro.png' 
-import geldgeier from '../assets/geldgeier.png' 
+import ui from '../assets/ui.jpg' 
 import smartContract from '../assets/smart-contract.jpg' 
 
 export const projectsData: Project[] = [
@@ -16,7 +16,7 @@ export const projectsData: Project[] = [
     id: 2,
     title: "Expense Management Tool",
     description: "Developed and integrated a feature into an expense management tool that allows users to scan receipts using OCR and AI. The Next.js web application automatically extracts and populates form data, streamlining the expense submission process.",
-    image: geldgeier,
+    image: ui,
     technologies: ["Next.js", "OpenAI", "OCR", "Firebase"],
   },
   {
