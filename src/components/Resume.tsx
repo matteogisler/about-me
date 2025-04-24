@@ -33,23 +33,23 @@ const Resume: React.FC = () => {
     {
       icon: Briefcase,
       period: "Apr. 2025",
-      title: "Junior Blockchain Developer",
-      company: "Web3 Solutions",
-      description: "Developing smart contracts and decentralized applications. Working on blockchain integration with frontend applications."
+      title: "Hackathon 2nd Place",
+      company: "Baden Hackt",
+      description: "Developed a mobile app with flutter that uses AI for personalized coaching in chat form. Won 2nd place."
     },
     {
       icon: GraduationCap,
       period: "Oct. 2023 - Nov. 2023",
       title: "New York - Work Experience Abroad",
       company: "Greater Zurich Area",
-      description: "Completed a comprehensive developer apprenticeship program with a focus on web development and emerging technologies."
+      description: "Had the opportunity to go to New York City for a month and experience the life and work culture."
     },
     {
       icon: Briefcase,
       period: "2021 - Present",
       title: "Developer in Training",
       company: "TIE International AG",
-      description: "Developed a Web3 iOS wallet that secured 2nd place in the competition. Implemented secure key management and intuitive user interface."
+      description: "Completing a comprehensive developer apprenticeship program with a focus on web development and emerging technologies."
     }
   ];
 
@@ -107,17 +107,31 @@ const Resume: React.FC = () => {
                     }}
                     className="relative flex flex-col md:flex-row"
                   >
+                    {/* ← icon container (one div for both breakpoints) */}
+                    <div
+                      className="
+                        absolute top-0 
+                        left-0  md:left-1/2 
+                        transform 
+                          -translate-x-0    md:-translate-x-1/2
+                        w-6   md:w-10 
+                        h-6   md:h-10 
+                        rounded-full 
+                        bg-indigo-600 
+                        flex items-center justify-center
+                      "
+                    >
+                      <Icon size={ index === 0 ? 16 : 20 } className="text-white" />
+                    </div>
+
+                    {/* ← left-hand content */}
                     <div className="md:w-1/2 md:pr-8 md:text-right mb-6 md:mb-0">
-                      <div className={`md:hidden absolute left-0 w-6 h-6 rounded-full bg-indigo-600 -translate-x-1/2 transform flex items-center justify-center`}>
-                        <Icon size={16} className="text-white" />
-                      </div>
-                      <div className={`hidden md:block absolute top-0 left-auto md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center`}>
-                        <Icon size={20} className="text-white" />
-                      </div>
                       <h3 className="text-xl font-bold text-white">{item.title}</h3>
                       <div className="text-indigo-400 font-medium">{item.company}</div>
                       <div className="text-gray-500">{item.period}</div>
                     </div>
+
+                    {/* ← right-hand description */}
                     <div className="md:w-1/2 md:pl-8 pl-6 border-l md:border-l-0 border-gray-700">
                       <p className="text-gray-300">{item.description}</p>
                     </div>
