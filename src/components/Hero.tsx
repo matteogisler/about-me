@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-gray-400 text-xl mb-12 leading-relaxed"
           >
-            Trained Software Engineer with a passion for Web3 and decentralized technology. One of the few blockchain apprentices in Switzerland, blending traditional development skills with hands-on experience in emerging ecosystems.
+            Trained Software Engineer with a passion for Web3 and decentralized technology. One of few blockchain apprentices in Switzerland, blending traditional development skills with hands-on experience in emerging ecosystems.
           </motion.p>
           
           <motion.div
