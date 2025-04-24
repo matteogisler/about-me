@@ -19,8 +19,8 @@ const Header: React.FC<HeaderProps> = ({ scrollY }) => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/matteogisler', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/matteogisler', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:matteo.gisler@example.com', label: 'Email' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/matteo-gisler-961bb9221/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:matteo.gisler05@gmail.com', label: 'Email' },
   ];
 
   return (
