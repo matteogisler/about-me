@@ -49,7 +49,7 @@ const Resume: React.FC = () => {
       period: "2021 - Present",
       title: "Developer in Training",
       company: "TIE International AG",
-      description: "Completing a comprehensive developer apprenticeship program with a focus on web development and emerging technologies."
+      description: "Completing a comprehensive developer apprenticeship with a focus on web development and emerging technologies."
     }
   ];
 
