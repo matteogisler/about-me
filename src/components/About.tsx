@@ -31,7 +31,7 @@ const About: React.FC = () => {
     { name: 'Python', level: 70 },
     { name: 'SQL', level: 75 },
     { name: 'Java', level: 60 },
-    { name: 'Solidity (Learning)', level: 20 },
+    { name: 'Solidity (Learning)', level: 35 },
   ];
 
   const skillCategories: SkillCategory[] = [
