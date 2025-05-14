@@ -2,6 +2,7 @@ import { Project } from './types';
 import nutro from '../assets/Nutro.png' 
 import ui from '../assets/ui.jpg' 
 import smartContract from '../assets/smart-contract.jpg' 
+import optitrade from '../assets/optitrade.png' 
 
 export const projectsData: Project[] = [
   {
@@ -25,5 +26,12 @@ export const projectsData: Project[] = [
     description: "Built a basic smart contract using Solidity to understand core concepts of Ethereum development. The contract includes fundamental features such as state variables, functions for reading and writing data, and basic access control.",
     image: smartContract,
     technologies: ["Solidity", "Ethereum", "Remix IDE", "Blockchain"],
+  },
+  {
+    id: 4,
+    title: "DeFi Trading Dashboard",
+    description: "A clean, modern mock DeFi trading platform built in Next.js and TypeScript with Tailwind CSS. It pulls real-time crypto market data from a third-party API, displays interactive price charts, and features a mock order panel for a polished UX-focused demo.",
+    image: optitrade,
+    technologies: ["Typescript", "Next.js", "Tailwind CSS", "API"],
   }
 ];
