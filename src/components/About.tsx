@@ -67,7 +67,7 @@ const About: React.FC = () => {
         { icon: '🗄️', label: 'MySQL' },
         { icon: '🥭', label: 'MongoDB' },
         { icon: '🔷', label: '.NET' },
-        { icon: '#️⃣',  label: 'C#' },
+        { icon: '#️⃣',  label: 'C#' }, 
       ],
     },
   ];
