@@ -28,7 +28,7 @@ const About: React.FC = () => {
 
   const skillsData: Skill[] = [
     { name: 'React / Web Dev', level: 90 },
-    { name: 'Python', level: 85 },
+    { name: 'Java / C#', level: 70 },
     { name: 'SQL', level: 80 },
     { name: 'Java', level: 65 },
     { name: 'Solidity (Learning)', level: 35 },
