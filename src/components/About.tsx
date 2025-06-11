@@ -100,7 +100,7 @@ const About: React.FC = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold mb-6 text-indigo-400">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                As a junior developer, I've recently completed my developer apprenticeship with a focus
+                As a junior developer, I'm about to complete my developer apprenticeship with a focus
                 on blockchain where I discovered my passion for Web3 technologies. My journey began
                 with traditional web development, but I quickly became fascinated by blockchain's
                 potential to revolutionize how we build digital systems.
